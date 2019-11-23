@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-struct Box : Identifiable {
+/*struct Box : Identifiable {
     var id = UUID()
     let title, imageUrl : String
-}
+}*/
 
 struct ContentView: View {
     
