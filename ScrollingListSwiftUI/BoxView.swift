@@ -9,13 +9,23 @@
 import SwiftUI
 
 struct BoxView: View {
+    
+    @State var box : Box
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(box.imageUrl)
+            .resizable()
+            .frame(width: 80, height: 80)
+            .cornerRadius(12)
+            
+            Text(box.title)
+                
+        }
     }
 }
 
 struct BoxView_Previews: PreviewProvider {
     static var previews: some View {
-        BoxView()
+        BoxView(box: Box(title: "", imageUrl: ""))
     }
 }
